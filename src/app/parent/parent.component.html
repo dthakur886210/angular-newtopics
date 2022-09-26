@@ -1,5 +1,7 @@
 <h1>parent component</h1>
 <button (click)="toggleChild()">Toggle Child</button>
 <input type="text" [(ngModel)]="channelName">
-<app-cild *ngIf="isChild" [channelName]="channelName"></app-cild>
+<app-cild *ngIf="isChild" [channelName]="channelName">
+    <h2 #projectedContent>I am expecting this to show in child component</h2>
+</app-cild>
 
