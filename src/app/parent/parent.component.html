@@ -1,0 +1,5 @@
+<h1>parent component</h1>
+<button (click)="toggleChild()">Toggle Child</button>
+<input type="text" [(ngModel)]="channelName">
+<app-cild *ngIf="isChild" [channelName]="channelName"></app-cild>
+
