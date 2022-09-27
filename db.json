@@ -1,0 +1,39 @@
+{
+  "users": [
+    {
+      "id": 1,
+      "name": "Deepak",
+      "address": "jammu"
+    },
+    {
+      "id": 2,
+      "name": "ameen",
+      "address": "banglore"
+    },
+    {
+      "id": 3,
+      "name": "krutik",
+      "address": "mumbai"
+    },
+    {
+      "id": 4,
+      "name": "harshit",
+      "address": "delhi"
+    },
+    {
+      "id": 5,
+      "name": "dheeraj",
+      "address": "UP"
+    },
+    {
+      "name": "huhhuyt",
+      "address": "jammu",
+      "id": 6
+    },
+    {
+      "name": "mr bhaskar",
+      "address": "jammu",
+      "id": 7
+    }
+  ]
+}
