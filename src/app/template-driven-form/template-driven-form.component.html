@@ -1,0 +1,12 @@
+<h1>Template Driven Form</h1>
+<form #loginForm="ngForm" (ngSubmit)="userLogin(loginForm.value)">
+    <input type="text" required #name="ngModel" pattern="[a-zA-Z]+$" ngModel name="name" placeholder="Enter Name">
+    <br><span *ngIf="name.invalid && name.touched" style="color: red;">Please Enter a Valid Input</span><br>
+    <br>
+    <input type="password" required #password="ngModel" minlength="2" ngModel name="password" placeholder="Enter password">
+    <br>
+    <span *ngIf="password.invalid && password.touched" style="color: red;">Please Enter a Valid Input</span>
+    <br>
+    <button [disabled] = "loginForm.invalid">login</button>
+    <!-- or form email format validation just write email in place of pattern on line number 3 -->
+</form>
