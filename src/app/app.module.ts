@@ -10,7 +10,8 @@ import { TemplateRefrenceVariableComponent } from './template-refrence-variable/
 import { PipesComponent } from './pipes/pipes.component';
 import { CustomPipePipe } from './pipes/custom-pipe.pipe';
 import { TemplateDrivenFormComponent } from './template-driven-form/template-driven-form.component';
-import { ReactiveFormComponent } from './reactive-form/reactive-form.component'
+import { ReactiveFormComponent } from './reactive-form/reactive-form.component';
+import { FooterComponent } from './footer/footer.component'
 
 @NgModule({
   declarations: [
@@ -21,7 +22,8 @@ import { ReactiveFormComponent } from './reactive-form/reactive-form.component'
     PipesComponent,
     CustomPipePipe,
     TemplateDrivenFormComponent,
-    ReactiveFormComponent
+    ReactiveFormComponent,
+    FooterComponent
   ],
   imports: [
     BrowserModule,

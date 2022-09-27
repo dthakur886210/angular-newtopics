@@ -1,0 +1,27 @@
+{
+  "posts": [
+    {
+      "id": 1,
+      "title": "json-server",
+      "author": "typicode"
+    }
+  ],
+ "users":[
+  {
+    "name": "Deepak",
+     "email" : "Deepak@test.com"
+},
+{
+  "name": "ameen",
+   "email" : "ameen@test.com"
+},
+{
+  "name": "krutik",
+   "email" : "krutik@test.com"
+},
+{
+  "name": "harshit",
+   "email" : "harshit@test.com"
+}
+ ]
+}
