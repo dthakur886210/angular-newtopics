@@ -1,0 +1,12 @@
+model --> model is the one which defines the data structure. 
+lets we have an object {name : 'deepak', id : 100}
+mostly use for decreasing the chances of error like we should take the numeric part in id and if we will take
+string part it will tell us that we are doing something mistake,
+model is not a part of angular and it is the part of typescript....
+
+
+Routing Module : first we defined all routing in app-routing.module.ts 
+but we can place routing as per modules in different modules 
+sometimes we have many modules, and there will be many routes, so we don't want to route them all together,
+to save load from application
+ng g m modulename --routing and change there from root to child in module 
