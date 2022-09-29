@@ -1,6 +1,6 @@
 import { HttpClientModule } from '@angular/common/http';
 import { NgModule } from '@angular/core';
-import { FormsModule } from '@angular/forms';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { BrowserModule } from '@angular/platform-browser';
 import { AdminModule } from './admin/admin.module';
 
@@ -12,6 +12,8 @@ import { FormComponent } from './form/form.component';
 import { ModelcomponentComponent } from './modelcomponent/modelcomponent.component';
 import { PersonModule } from './person/person.module';
 import { UserModule } from './user/user.module';
+import { TestComponent } from './test/test.component';
+import { LazyloadingComponent } from './lazyloading/lazyloading.component';
 
 @NgModule({
   declarations: [
@@ -20,6 +22,8 @@ import { UserModule } from './user/user.module';
     Component2Component,
     FormComponent,
     ModelcomponentComponent,
+    TestComponent,
+    LazyloadingComponent,
   ],
   imports: [
     BrowserModule,
@@ -28,7 +32,8 @@ import { UserModule } from './user/user.module';
     FormsModule,
     PersonModule,
     AdminModule,
-    UserModule
+    UserModule,
+    ReactiveFormsModule
   ],
   providers: [],
   bootstrap: [AppComponent],
