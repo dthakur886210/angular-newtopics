@@ -3,5 +3,6 @@
     <br>
     <input type="text" placeholder="enter your address" formControlName="address">
     <br><br>
-    <button>submit</button>
+    <button [disabled]="testForm.invalid">submit</button>
+    <button (click)="remove()">Remove Validation</button> <button (click)="setVal()">set Validation</button>
 </form>

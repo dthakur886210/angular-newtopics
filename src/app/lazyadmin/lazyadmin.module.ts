@@ -18,4 +18,6 @@ console.warn("lazyadmin module");
     LazyadminRoutingModule
   ]
 })
-export class LazyadminModule { }
+export class LazyadminModule {
+ 
+ }
