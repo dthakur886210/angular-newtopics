@@ -7,7 +7,8 @@ import { FormControl, FormGroup } from '@angular/forms';
   styleUrls: ['./test.component.css']
 })
 export class TestComponent implements OnInit {
-
+a : number[] = [];
+b : any[] =[];
   constructor() { }
   testForm = new FormGroup({
     name : new FormControl(''),
@@ -15,6 +16,7 @@ export class TestComponent implements OnInit {
   })
   testUser(){
     console.warn(this.testForm.value.address);
+    this.a.push();
     
   }
   // get name(){

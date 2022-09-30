@@ -7,22 +7,53 @@
 <!-- <app-login></app-login>
 <app-signup></app-signup> -->
 <ul>
-    <li><a routerLink="login">Login</a></li>
-    <li><a routerLink="signup">Signup</a></li>
+  <li><a routerLink="login">Login</a></li>
+  <li><a routerLink="signup">Signup</a></li>
 </ul>
 <h1>--------routing module----------------</h1>
 <ul>
-    <li>
-        <a routerLink="admin/login">Login</a>
-        <br>
-        <a routerLink="admin/list">List</a>
-    </li>
+  <li>
+    <a routerLink="admin/login">Login</a>
+    <br />
+    <a routerLink="admin/list">List</a>
+  </li>
 </ul>
 <h1>-----------------group routing---------------------</h1>
 <ul>
-    <li><a routerLink="user/login">Login</a></li>
-    <li><a routerLink="user/list">List</a></li>
+  <li><a routerLink="user/login">Login</a></li>
+  <li><a routerLink="user/list">List</a></li>
 </ul>
-<router-outlet></router-outlet>
+
 <h1>-------------------------------test---------------------------</h1>
 <app-test></app-test>
+
+<h1>
+  ----------------------------------28th
+  sept-----------------------------------------------------
+</h1>
+<h1>lazy loading</h1>
+<p>
+  In Normal loading, all routes are load in the first attempt, problem is the
+  data consumption in the first load, and lazy loading is about the loading
+  routes on the modules, till the module is not opened , the routing will not be
+  loaded. we will not import directly the lazyadmin.module.ts in anywhere
+</p>
+<h2>lazyadmin example</h2>
+<ul>
+  <li><a routerLink="lazyadmin/login">Login</a></li>
+  <li><a routerLink="lazyadmin/list">List</a></li>
+</ul>
+<h2>lazyuser example</h2>
+<ul>
+  <li><a routerLink="lazyuser/login">Login</a></li>
+  <li><a routerLink="lazyuser/list">List</a></li>
+</ul>
+<h1>--------------lazy component--------------------</h1>
+<p>
+  lets we have many components in a project and then they will load in one time,
+  this will create inefficiency in the performance. so when the component is
+  clicked only then it will be routed
+</p>
+<router-outlet></router-outlet>
+<button (click)="loadlazyAdmin()">Load Lazyadmincomponent list</button>
+<button (click)="loadlazyUser()">Load Lazyusercomponent list</button>

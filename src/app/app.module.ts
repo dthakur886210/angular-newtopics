@@ -13,7 +13,9 @@ import { ModelcomponentComponent } from './modelcomponent/modelcomponent.compone
 import { PersonModule } from './person/person.module';
 import { UserModule } from './user/user.module';
 import { TestComponent } from './test/test.component';
-import { LazyloadingComponent } from './lazyloading/lazyloading.component';
+import { LazycomponentUserComponent } from './lazycomponent-user/lazycomponent-user.component';
+import { LazycomponentAdminComponent } from './lazycomponent-admin/lazycomponent-admin.component';
+
 
 @NgModule({
   declarations: [
@@ -23,7 +25,8 @@ import { LazyloadingComponent } from './lazyloading/lazyloading.component';
     FormComponent,
     ModelcomponentComponent,
     TestComponent,
-    LazyloadingComponent,
+    LazycomponentUserComponent,
+    LazycomponentAdminComponent,
   ],
   imports: [
     BrowserModule,
@@ -33,7 +36,7 @@ import { LazyloadingComponent } from './lazyloading/lazyloading.component';
     PersonModule,
     AdminModule,
     UserModule,
-    ReactiveFormsModule
+    ReactiveFormsModule,
   ],
   providers: [],
   bootstrap: [AppComponent],
