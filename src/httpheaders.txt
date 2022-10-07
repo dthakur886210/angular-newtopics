@@ -1,0 +1,23 @@
+HTTP headers consists of 7 methods..
+1) Append 2) Has 3) Get 4) Keys 5) getAll 6) Set 7) delete
+
+
+http headers are immutable i.e they cannot be modified.
+
+
+-- HTTP headers is in the class HttpHeaders
+i.e we have to import the class HttpHeaders.
+
+
+-- we can pass HttpHeaders through any of the Http methods..
+- PUT
+-GET
+- Delete
+- PATCH
+- POST
+
+we can pass any number of headers.
+
+we don't send the duplicate headers
+
+we can also send custom headers which are requred by our application specific requirements or needs
