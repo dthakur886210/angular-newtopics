@@ -11,7 +11,9 @@ import { PipesComponent } from './pipes/pipes.component';
 import { CustomPipePipe } from './pipes/custom-pipe.pipe';
 import { TemplateDrivenFormComponent } from './template-driven-form/template-driven-form.component';
 import { ReactiveFormComponent } from './reactive-form/reactive-form.component';
-import { FooterComponent } from './footer/footer.component'
+import { FooterComponent } from './footer/footer.component';
+import { Test000Component } from './test000/test000.component';
+import { TwowayBindComponent } from './twoway-bind/twoway-bind.component'
 
 @NgModule({
   declarations: [
@@ -23,7 +25,9 @@ import { FooterComponent } from './footer/footer.component'
     CustomPipePipe,
     TemplateDrivenFormComponent,
     ReactiveFormComponent,
-    FooterComponent
+    FooterComponent,
+    Test000Component,
+    TwowayBindComponent
   ],
   imports: [
     BrowserModule,

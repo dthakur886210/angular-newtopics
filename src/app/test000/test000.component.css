@@ -1,0 +1,14 @@
+table{
+  width: 100%;
+  display: block;
+}
+thead {
+  display: inline-block;
+  width: 100%;
+
+}
+tbody{
+  display: inline-block;
+  width: 100%;
+  overflow: auto;
+}
